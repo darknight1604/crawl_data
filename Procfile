@@ -1,2 +1,1 @@
-web: /app/.chromedriver/bin/chromedriver
-web: mix phx.server
+web: /app/.chromedriver/bin/chromedriver; mix phx.server
