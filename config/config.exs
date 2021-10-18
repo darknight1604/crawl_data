@@ -48,7 +48,9 @@ config :phoenix, :json_library, Jason
 
 config :hound,
     driver: "chrome_driver",
-    browser: "chrome_headless"
+    browser: "chrome_headless",
+    host: "https://crawl-driver.herokuapp.com",
+    port: 9515
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
