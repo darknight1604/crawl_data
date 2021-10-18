@@ -1,1 +1,1 @@
-web: /app/.chromedriver/bin/chromedriver
+web: /app/.chromedriver/bin/chromedriver --allowed-ips shopee-crawl-data.herokuapp.com
