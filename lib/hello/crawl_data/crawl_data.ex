@@ -132,7 +132,7 @@ defmodule CrawlData do
 
     def wait_until_page_is_loaded() do
         IO.puts "wait"
-        Process.sleep(1000)
+        Process.sleep(500)
         case execute_script("return document.readyState") do
            "loading" ->  wait_until_page_is_loaded()
            _ -> scrollToBottom()
