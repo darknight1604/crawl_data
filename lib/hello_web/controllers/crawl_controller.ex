@@ -3,6 +3,12 @@ defmodule HelloWeb.CrawlController do
     def index(conn, %{"type" => type}) do
         {type_crawl, _remain} = Integer.parse(type)
         result = CrawlData.run(type_crawl)
-        json(conn, Enum.reverse(result))
+        # result = :ok
+        IO.puts is_list(result)
+        if result == :ok do
+            json(conn, [])
+        else
+            json(conn, Enum.reverse(result))
+        end
     end
 end
